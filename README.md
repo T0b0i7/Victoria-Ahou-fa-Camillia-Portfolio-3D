@@ -2,6 +2,8 @@
 
 *Développé avec passion par Echer ABATTI*
 
+![Portfolio Preview](public/Portefolio.PNG)
+
 ---
 
 ## 🌟 Présentation du Projet
