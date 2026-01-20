@@ -5,6 +5,8 @@ import type {
   TExperience,
   TTestimonial,
   TProject,
+  TCertification,
+  TSkillCategory,
 } from "../types";
 
 import {
@@ -15,7 +17,6 @@ import {
   javascript,
   typescript,
   html,
-  css,
   reactjs,
   redux,
   tailwind,
@@ -25,12 +26,9 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
   tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  innovetech,
+  sicoges,
   threejs,
 } from "../assets";
 
@@ -44,6 +42,14 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
+    id: "skills",
+    title: "Compétences",
+  },
+  {
+    id: "certifications",
+    title: "Certifications",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -51,129 +57,125 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Développeuse Full-stack",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "IA & Data Science",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Spécialiste Cybersécurité",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "IoT & Systèmes Embarqués",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
+    name: "Python",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "Java",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "Django",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "React JS",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "Next.js",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "Bootstrap",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "MySQL",
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "SQLite",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git/GitHub",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Arduino",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "IoT",
     icon: docker,
+  },
+  {
+    name: "Apprentissage Automatique",
+    icon: html,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
+    title: "Développeuse Full-stack",
+    companyName: "InnovTech",
+    icon: innovetech,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Nov 2025 - Présent",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Développement et maintenance d'applications web Full-stack avec les technologies modernes.",
+      "Collaboration avec des équipes multidisciplinaires pour concevoir et implémenter des solutions évolutives.",
+      "Implémentation de design responsive et optimisation des performances.",
+      "Participation à des reviews de code et feedback constructif.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    title: "Stagiaire Développeuse Backend",
+    companyName: "Art-Creativity",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Mars 2025 - Juin 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Développement de systèmes backend avec Django et architecture RESTful.",
+      "Implémentation de systèmes de collecte et synchronisation de données de santé.",
+      "Obtention de la mention Excellente pour la qualité technique et l'impact social.",
+      "Travail avec bases de données MySQL et solutions de gestion de données.",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "Stagiaire - Développement Web",
+    companyName: "Sicogès",
+    icon: sicoges,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Juil 2023 - Août 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Formation pratique en développement web avec Django et Bootstrap.",
+      "Participation à des projets réels de gestion intégrant frontend et backend.",
+      "Travail avec bases de données et implémentation de design responsive.",
+      "Collaboration avec les équipes sur divers aspects du développement web.",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Responsable de classe",
+    companyName: "INSIT",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "2022 - 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Coordination académique et organisationnelle de la classe.",
+      "Direction des initiatives en développement du leadership et communication.",
+      "Promotion de l'engagement communautaire et des programmes d'égalité des genres.",
+      "Progression académique constante démontrant rigueur et motivation.",
     ],
   },
 ];
@@ -181,94 +183,251 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Victoria est une développeuse Full-stack exceptionnelle avec une compréhension approfondie de l'architecture backend et du design frontend. Son travail sur notre système de suivi sanitaire était remarquable.",
+    name: "Mr.Eucher ABATTI",
+    designation: "Tech Dev",
+    company: "InnovTech",
+    image: "/Tobi.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Sa passion pour l'IA et l'apprentissage automatique est remarquable. Les contributions de Victoria au projet de reconnaissance faciale démontrent à la fois l'excellence technique et l'innovation.",
+    name: "Eucher ABATTI",
+    designation: "Ingénieur Logiciel",
+    company: "Art-Creativity",
+    image: "/Tobi.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Un développeur talentueux avec une grande capacité à apprendre et à s'adapter. Victoria apporte une perspective novatrice aux projets d'innovation, particulièrement dans les domaines de l'IA et de l'IoT.",
+    name: "Équipe FRERAF",
+    designation: "Coordinateurs Hackathon",
+    company: "Smart Cities",
+    image: "/Tobi.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Système de Reconnaissance Faciale",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Système automatisé de suivi des présences en entreprise utilisant des algorithmes IA de reconnaissance d'images et collecte de données automatisée. Implémentation d'algorithmes de vision par ordinateur pour détection en temps réel.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "IA/ML",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "OpenCV",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: "/Système de Reconnaissance Faciale.jpg",
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Station Météo IoT",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Système IoT complet avec microcontrôleur ESP32 pour l'acquisition de données météorologiques, transmission et visualisation via interface web. Implémentation de streaming de données et suivi en temps réel.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Arduino/ESP32",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tableau de Bord Web",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: "https://images.unsplash.com/photo-1563207153-f403bf289096?w=500&h=500&fit=crop",
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Fortify - Sécurité Autonome des Parkings",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Application Full-stack pour la sécurité des parkings avec systèmes de véhicules autonomes. Implémente l'application automatique pour prévenir les violations routières en temps réel.",
     tags: [
       {
-        name: "nextjs",
+        name: "Django",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Détection IA",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=500&fit=crop",
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Hackathon National Smart Cities - FRERAF",
+    description:
+      "Application mobile IA pour alertes de sécurité et détection des zones à risque. Finalistes du hackathon avec une solution innovante combinant IA et géolocalisation.",
+    tags: [
+      {
+        name: "IA/ML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mobile App",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Géolocalisation",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "École d'été IA (EEIA) - Voiture Autonome",
+    description:
+      "Prototypage de voiture autonome capable de circuler et de prendre des décisions sans intervention humaine. Projet d'amélioration de la sécurité routière combinant vision par ordinateur et systèmes embarqués.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Systèmes Embarqués",
+        color: "green-text-gradient",
+      },
+      {
+        name: "IA/Vision",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop",
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Hackathon CELTIIS - App Streaming Touristique",
+    description:
+      "Application mobile de streaming touristique développée en équipe. Utilise les compétences acquises lors des formations sur les mini-apps et technologies mobiles modernes.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Streaming",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mobile",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=500&h=500&fit=crop",
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "GAIATHon'24 - Batterie pour Motos Électriques",
+    description:
+      "Conception d'une batterie innovante pour motos afin de remplacer l'essence, réduisant la pollution et protégeant la couche d'ozone. Concours d'innovation environnementale.",
+    tags: [
+      {
+        name: "Électronique",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Innovation",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Environnement",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&h=500&fit=crop",
     sourceCodeLink: "https://github.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const certifications: TCertification[] = [
+  {
+    name: "Fondations de la Cybersécurité",
+    issuer: "Coursera",
+  },
+  {
+    name: "Connecter et Protéger les Réseaux et la Sécurité Réseau",
+    issuer: "Coursera",
+  },
+  {
+    name: "Jouer la Sécurité : Gérer les Risques de Sécurité",
+    issuer: "Coursera",
+  },
+  {
+    name: "Introduction à l'IoT et la Transformation Numérique",
+    issuer: "CISCO Networking Academy",
+  },
+  {
+    name: "Introduction à la cybersécurité",
+    issuer: "CISCO Networking Academy",
+  },
+  {
+    name: "Détection d'Objets : Du Zéro au Héros",
+    issuer: "Udemy",
+  },
+  {
+    name: "Maîtrise de Python – 100 Jours, 100 Projets",
+    issuer: "Udemy",
+  },
+  {
+    name: "Construire une Voiture Autonome via l'IA et l'IoT",
+    issuer: "Udemy",
+  },
+  {
+    name: "Fondations : Les Données, Partout les Données",
+    issuer: "Coursera",
+  },
+  {
+    name: "Fondamentaux de la Vision par Ordinateur",
+    issuer: "Udemy",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, certifications };
+
+const skills: TSkillCategory[] = [
+  {
+    category: "Programmation",
+    skills: ["Python", "Java", "HTML/CSS", "Django", "Bootstrap", "Next.js", "MySQL", "SQLite"],
+    color: "#915EFF",
+  },
+  {
+    category: "Data Science & IA",
+    skills: ["Machine Learning", "Vision par Ordinateur (YOLO)", "TinyML", "Big Data", "Visualisation de données"],
+    color: "#00D4FF",
+  },
+  {
+    category: "Électronique & Systèmes Embarqués",
+    skills: ["CAO Électrique", "Arduino", "Instrumentation Industrielle", "Programmation de Drones", "Voitures Autonomes", "Domotique"],
+    color: "#FF6B6B",
+  },
+  {
+    category: "Outils & Méthodes",
+    skills: ["UML", "Git/GitHub", "Canva", "Gestion de Projets Numériques", "Optimisation et Analyse"],
+    color: "#4ECDC4",
+  },
+  {
+    category: "Réseaux & Cybersécurité",
+    skills: ["Architecture Réseau", "Sécurité SI", "VPN", "Cryptographie", "MFA"],
+    color: "#FFD93D",
+  },
+];
+
+export { skills };

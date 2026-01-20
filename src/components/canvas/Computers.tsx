@@ -1,14 +1,27 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import React, { Suspense, useEffect, useState, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, Preload } from "@react-three/drei";
+import * as THREE from "three";
 
 import CanvasLoader from "../layout/Loader";
 
-const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+const RotatingMeshes: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
+  const boxRef = useRef<THREE.Mesh>(null);
+  const torusRef = useRef<THREE.Mesh>(null);
+
+  useFrame(() => {
+    if (boxRef.current) {
+      boxRef.current.rotation.x += 0.01;
+      boxRef.current.rotation.y += 0.015;
+    }
+    if (torusRef.current) {
+      torusRef.current.rotation.x -= 0.005;
+      torusRef.current.rotation.z += 0.01;
+    }
+  });
 
   return (
-    <mesh>
+    <>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
@@ -19,13 +32,41 @@ const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -4.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
+      
+      {/* Rotating cube */}
+      <mesh 
+        ref={boxRef}
+        scale={isMobile ? 1.5 : 2} 
+        position={[0, 0, 0]}
+      >
+        <boxGeometry args={[1, 1, 1]} />
+        <meshStandardMaterial 
+          color="#915EFF" 
+          metalness={0.8}
+          roughness={0.2}
+        />
+      </mesh>
+      
+      {/* Rotating torus */}
+      <mesh 
+        ref={torusRef}
+        scale={isMobile ? 1 : 1.2} 
+        position={[0, 0, 0]}
+      >
+        <torusGeometry args={[1.5, 0.5, 16, 100]} />
+        <meshStandardMaterial 
+          color="#00d4ff" 
+          metalness={0.7}
+          roughness={0.3}
+        />
+      </mesh>
+    </>
+  );
+};
+
+const Computers: React.FC<{ isMobile: boolean }> = ({ isMobile }) => {
+  return (
+    <RotatingMeshes isMobile={isMobile} />
   );
 };
 

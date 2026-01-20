@@ -12,7 +12,29 @@ import { Header } from "../atoms/Header";
 import { TExperience } from "../../types";
 import { config } from "../../constants/config";
 
+const getCompanyInitials = (companyName: string) => {
+  return companyName
+    .split(" ")
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+};
+
+const getCompanyColor = (companyName: string) => {
+  const colors: { [key: string]: string } = {
+    InnovTech: "#915EFF",
+    "Art-Creativity": "#00D4FF",
+    Sicogès: "#FF6B6B",
+    INSIT: "#4ECDC4",
+  };
+  return colors[companyName] || "#915EFF";
+};
+
 const ExperienceCard: React.FC<TExperience> = (experience) => {
+  const initials = getCompanyInitials(experience.companyName);
+  const bgColor = getCompanyColor(experience.companyName);
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -21,14 +43,20 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ background: bgColor }}
       icon={
-        <div className="flex h-full w-full items-center justify-center">
-          <img
-            src={experience.icon}
-            alt={experience.companyName}
-            className="h-[60%] w-[60%] object-contain"
-          />
+        <div className="flex h-full w-full items-center justify-center bg-gradient-to-r from-[rgba(145,94,255,0.2)] to-[rgba(0,212,255,0.2)] rounded-full">
+          <div className="flex items-center justify-center w-full h-full">
+            {experience.icon ? (
+              <img
+                src={experience.icon}
+                alt={experience.companyName}
+                className="h-[60%] w-[60%] object-contain"
+              />
+            ) : (
+              <span className="text-white font-bold text-xl">{initials}</span>
+            )}
+          </div>
         </div>
       }
     >

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#grad4)"/>
+  <rect x="160" y="100" width="80" height="120" rx="5" fill="white" opacity="0.2" stroke="white" stroke-width="3"/>
+  <rect x="170" y="110" width="60" height="60" fill="white" opacity="0.15"/>
+  <circle cx="200" cy="85" r="15" fill="white" opacity="0.3"/>
+  <text x="200" y="200" font-size="24" font-weight="bold" text-anchor="middle" fill="white">
+    Batterie Électrique
+  </text>
+  <text x="200" y="230" font-size="16" text-anchor="middle" fill="white" opacity="0.9">
+    GAIATHon'24 Innovation
+  </text>
+  <path d="M 80 260 Q 120 240 160 260" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 240 260 Q 280 240 320 260" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>

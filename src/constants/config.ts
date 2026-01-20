@@ -10,6 +10,16 @@ type TConfig = {
     fullName: string;
     email: string;
   };
+  contact_info: {
+    phone: string;
+    location: string;
+    coordinates: {
+      lat: number;
+      lng: number;
+    };
+    linkedin: string;
+    profileImage: string;
+  };
   hero: {
     name: string;
     p: string[];
@@ -40,55 +50,57 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Victoria Ahouéfa Camillia — Portfolio 3D",
+    fullName: "D'ALMEIDA Victoria Ahouéfa Camillia",
+    email: "dalmeidavictoria05@gmail.com",
+  },
+  contact_info: {
+    phone: "+2290157408841",
+    location: "Abomey-Calavi, Bénin",
+    coordinates: {
+      lat: 6.4969,
+      lng: 2.3522,
+    },
+    linkedin: "https://www.linkedin.com/in/victoria-d-almeida-7a920b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    profileImage: "/profil.png",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Victoria Ahouéfa",
+    p: ["Je crée des solutions Full-stack,", "des systèmes IA et des applications sécurisées"],
   },
   contact: {
-    p: "Get in touch",
+    p: "Restons en contact",
     h2: "Contact.",
     form: {
       name: {
-        span: "Your Name",
-        placeholder: "What's your name?",
+        span: "Votre Nom",
+        placeholder: "Quel est votre nom?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: { span: "Votre Email", placeholder: "Quel est votre email?" },
       message: {
-        span: "Your Message",
-        placeholder: "What do you want to say?",
+        span: "Votre Message",
+        placeholder: "Que voulez-vous dire?",
       },
     },
   },
   sections: {
     about: {
       p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      h2: "Aperçu.",
+      content: `Diplômée en Génie Électrique et Informatique, je suis une développeuse Full-stack spécialisée en IA, cybersécurité et IoT. Je me concentre sur la création de solutions robustes et évolutives pour la sécurité et les systèmes intelligents. Je collabore étroitement avec les équipes pour développer des applications efficaces et j'adore relever les défis en apprentissage automatique, développement backend et systèmes embarqués.`,
     },
     experience: {
-      p: "What I have done so far",
-      h2: "Work Experience.",
+      p: "Ce que j'ai réalisé",
+      h2: "Expérience Professionnelle.",
     },
     feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
+      p: "Ce que les autres disent",
+      h2: "Recommandations.",
     },
     works: {
-      p: "My work",
-      h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      p: "Mes travaux",
+      h2: "Projets.",
+      content: `Les projets suivants mettent en évidence mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers les dépôts de code. Cela reflète ma capacité à résoudre des problèmes complexes en IA, cybersécurité, IoT et développement Full-stack.`,
     },
   },
 };

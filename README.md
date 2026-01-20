@@ -1,4 +1,4 @@
-# 3D Portfolio
+# Portfolio 3D de Victoria Ahouéfa Camillia
 
 <!-- GitHub badges -->
 
@@ -10,7 +10,6 @@
 
 ![demo](.github/README_ASSETS/3d-portfolio.png)
 
-[![ladunjexa](https://custom-icon-badges.demolab.com/badge/made%20by%20-ladunjexa-556bf2?logo=github&logoColor=white&labelColor=101827)](https://github.com/luadnjexa)
 [![License](https://img.shields.io/github/license/ladunjexa/reactjs18-3d-portfolio?color=dddddd&labelColor=000000)](https://github.com/ladunjexa/reactjs18-3d-portfolio/blob/main/LICENSE)
 [![Top Language](https://img.shields.io/github/languages/top/ladunjexa/reactjs18-3d-portfolio?logo=github&logoColor=%23007ACC&label=TypeScript)](https://www.typescriptlang.org/)
 [![Contributors](https://img.shields.io/github/contributors/ladunjexa/reactjs18-3d-portfolio?style=flat&color=orange&label=Contributors)](https://github.com/ladunjexa/reactjs18-3d-portfolio/graphs/contributors)
@@ -21,13 +20,28 @@
 
 ## 🌐 Live Demo
 
-Explore the live demonstration of the project:
-[reactjs18-3d-portfolio](https://reactjs18-3-d-portfolio.vercel.app/)
+Explorez la démonstration live du projet :
+[Portfolio 3D de Victoria](https://reactjs18-3-d-portfolio.vercel.app/)
 
 ## 📝 Description
 
-**3D Portfolio** is a well-designed and fully functional portfolio website that is built with
-React.js and Three.js. It is a fully responsive website that works well on all devices.
+**Portfolio 3D de Victoria Ahouéfa Camillia** est un portfolio moderne et interactif construit avec React.js et Three.js. Développé par D'ALMEIDA Victoria Ahouéfa Camillia, développeuse Full-stack spécialisée en IA, cybersécurité et IoT, ce site présente ses compétences et projets de manière immersive et innovante.
+
+Ce portfolio entièrement responsive met en valeur :
+- Des expériences 3D interactives
+- Des animations fluides et modernes
+- Une interface utilisateur intuitive
+- Des démonstrations de projets techniques
+- Des compétences en développement Full-stack, IA et cybersécurité
+
+### 🎯 Caractéristiques Principales
+
+- **Interface 3D Immersive** : Utilisation de Three.js pour créer des éléments 3D interactifs
+- **Design Responsive** : Optimisé pour tous les appareils (desktop, tablette, mobile)
+- **Animations Fluides** : Animations complexes avec Framer Motion et React Three Fiber
+- **Portfolio Complet** : Sections dédiées aux projets, compétences, expériences et certifications
+- **Contact Intégré** : Formulaire de contact fonctionnel avec EmailJS
+- **Performance Optimisée** : Build optimisé avec Vite pour des temps de chargement rapides
 
 <details><summary><b>Folder Structure</b></summary>
 

@@ -8,6 +8,7 @@ import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
+import FacialRecognitionCard from "../canvas/FacialRecognitionCard";
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
   index,
@@ -78,9 +79,21 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {projects.map((project, index) => {
+          // Utiliser le composant spécialisé pour le projet de reconnaissance faciale
+          if (project.name === "Système de Reconnaissance Faciale") {
+            return (
+              <FacialRecognitionCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            );
+          }
+          return (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          );
+        })}
       </div>
     </>
   );
