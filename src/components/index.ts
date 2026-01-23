@@ -17,7 +17,6 @@ import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
 import Works from "./sections/Works";
 import Skills from "./sections/Skills";
-import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
 import Certifications from "./sections/Certifications";
 import UltraInnovativeShowcase from "./sections/UltraInnovativeShowcase";
@@ -31,7 +30,6 @@ export {
   Experience,
   Works,
   Skills,
-  Feedbacks,
   Contact,
   Certifications,
   UltraInnovativeShowcase,

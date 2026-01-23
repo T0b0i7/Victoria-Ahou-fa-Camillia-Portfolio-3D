@@ -3,7 +3,6 @@ import type {
   TService,
   TTechnology,
   TExperience,
-  TTestimonial,
   TProject,
   TCertification,
   TSkillCategory,
@@ -177,33 +176,6 @@ const experiences: TExperience[] = [
       "Promotion de l'engagement communautaire et des programmes d'égalité des genres.",
       "Progression académique constante démontrant rigueur et motivation.",
     ],
-  },
-];
-
-const testimonials: TTestimonial[] = [
-  {
-    testimonial:
-      "Victoria est une développeuse Full-stack exceptionnelle avec une compréhension approfondie de l'architecture backend et du design frontend. Son travail sur notre système de suivi sanitaire était remarquable.",
-    name: "Mr.Eucher ABATTI",
-    designation: "Tech Dev",
-    company: "InnovTech",
-    image: "/Tobi.jpg",
-  },
-  {
-    testimonial:
-      "Sa passion pour l'IA et l'apprentissage automatique est remarquable. Les contributions de Victoria au projet de reconnaissance faciale démontrent à la fois l'excellence technique et l'innovation.",
-    name: "Eucher ABATTI",
-    designation: "Ingénieur Logiciel",
-    company: "Art-Creativity",
-    image: "/Tobi.jpg",
-  },
-  {
-    testimonial:
-      "Un développeur talentueux avec une grande capacité à apprendre et à s'adapter. Victoria apporte une perspective novatrice aux projets d'innovation, particulièrement dans les domaines de l'IA et de l'IoT.",
-    name: "Équipe FRERAF",
-    designation: "Coordinateurs Hackathon",
-    company: "Smart Cities",
-    image: "/Tobi.jpg",
   },
 ];
 
@@ -400,7 +372,7 @@ const certifications: TCertification[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, certifications };
+export { services, technologies, experiences, projects, certifications };
 
 const skills: TSkillCategory[] = [
   {
